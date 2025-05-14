@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'InterVariableFont';
+  src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf')
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'InterVariableFont', sans-serif;
+  font-size: 16px;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #000;
+  padding: 1.2rem;
+}
+
+.card {
+  min-width: 37.5rem;
+  background-color: #141414;
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 1.8rem 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.pic {
+  width: 30%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.info__details {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.location {
+  font-size: 1.6rem;
+  color: #c5f82a;
+}
+
+.position {
+  font-size: 1.4rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.link {
+  background-color: #333333;
+  text-align: center;
+  width: 100%;
+  border-radius: 1.2rem;
+  transition: background-color 0.3s ease-in;
+}
+
+.link:hover {
+  background-color: #c5f82a;
+}
+
+.link a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  max-width: 100%;
+  padding: 1.4rem 2.4rem;
+  font-weight: 300;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+  margin-top: auto;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 400px) {
+  .card {
+    min-width: 100%;
+    padding: 1rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .location {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  .position {
+    font-size: 1.3rem;
+  }
+
+  .link a {
+    font-size: 1.5rem;
+  }
+}
